@@ -15,23 +15,23 @@
 2.建图
 ##2.1 gmapping建图
 运行指令：
- roslaunch autolabor_box_launch create_map_gmapping.launch
+ roslaunch myrobot_navigation create_map_gmapping.launch
 保存建图，打开新的终端，运行如下指令：
  rosrun map_server map_saver -f map_name
 
 ##2.2 cartographer建图
 运行指令：
- roslaunch autolabor_box_launch create_map_carto.launch
+ roslaunch myrobot_navigation create_map_carto.launch
 保存建图，打开新的终端，运行如下指令：
  rosrun map_server map_saver -f map_name
 
 3.定位与路径规划
 ##3.1 使用gmapping地图定位与路径规划
 运行指令:
- roslaunch autolabor_box_launch gmap_navigation.launch
+ roslaunch myrobot_navigation gmap_navigation.launch
 
 ##3.2 使用cartographer地图定位与路径规划
- roslaunch autolabor_box_launch carto_navigation.launch
+ roslaunch myrobot_navigation carto_navigation.launch
 
 
 
